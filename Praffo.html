@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="theme-color" content="#0E1B14">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Praffo – Abruzzo olive oil for international buyers</title>
+<meta name="description" content="Praffo connects Abruzzo DOP olive mills with restaurants and businesses in Germany and the UK. Praffo mette in contatto i frantoi abruzzesi con compratori esteri.">
+<meta property="og:title" content="Praffo – From Abruzzo mills to your table">
+<meta property="og:description" content="B2B introductions between Abruzzo DOP olive mills and buyers in Germany and the UK.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bottle:#0E1B14;--olive:#2F6B4A;--gold:#60A37C;--pale:#E7F0EA;--paper:#F7FAF7;--ink:#12201A;
+--serif:"Fraunces",Georgia,"Times New Roman",serif;--sans:"Figtree",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px}
+h1,h2,h3{font-family:var(--serif);line-height:1.12;margin:0 0 .5em;font-weight:500;letter-spacing:-.01em}
+p{margin:0 0 1em;max-width:62ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:0;z-index:5;background:var(--bottle);color:#fff;border-bottom:1px solid rgba(96,163,124,.28);padding-top:env(safe-area-inset-top,0px)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:72px}
+.logo{display:flex;align-items:center}.logo svg{display:block;height:34px;width:auto}
+nav{display:flex;align-items:center;gap:28px;font-size:.78rem;letter-spacing:.14em;text-transform:uppercase}
+nav a{text-decoration:none;opacity:.9}nav a:hover{opacity:1;text-decoration:underline}
+.lang{border:1px solid var(--gold);background:none;color:var(--gold);border-radius:99px;padding:5px 14px;letter-spacing:.1em;font:inherit;cursor:pointer}
+.lang:hover{background:var(--gold);color:var(--bottle)}
+.hero{background:radial-gradient(900px 480px at 85% 30%,rgba(96,163,124,.16),transparent 70%),var(--bottle);color:#fff;padding:104px 0 120px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(2.1rem,5.5vw,3.7rem);animation:rise .9s ease both}
+.hero p{font-size:1.15rem;color:#C5DACD}
+@keyframes rise{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:14px 30px;border-radius:2px;font-weight:600;font-size:.85rem;letter-spacing:.1em;text-transform:uppercase;text-decoration:none;border:1px solid var(--gold)}
+.btn.main{background:var(--gold);color:var(--bottle)}
+.btn.alt{color:var(--gold)}
+.btn:hover{filter:brightness(1.1)}
+.hero svg{width:100%;height:auto;max-width:360px;justify-self:center}
+section{padding:104px 0}
+section.pale{background:var(--pale)}
+h2{font-size:clamp(1.7rem,3.6vw,2.4rem)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.steps{list-style:none;padding:0;margin:32px 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:28px;counter-reset:s}
+.steps li{counter-increment:s;border-top:1px solid var(--olive);padding-top:18px}
+.steps li::before{content:counter(s);font-family:var(--serif);font-size:2rem;color:var(--olive);display:block;line-height:1}
+.steps h3{font-size:1.15rem;margin-top:8px}
+.steps p{font-size:.97rem}
+.mills{background:var(--bottle);color:#fff;padding:44px;border-radius:2px;border-top:3px solid var(--gold)}
+.buyers{border:1px solid var(--olive);padding:44px;border-radius:2px;border-top:3px solid var(--olive)}
+.mills h2,.buyers h2{font-size:1.6rem}
+ul.tick{padding-left:1.1em;margin:0}ul.tick li{margin-bottom:.7em}
+form{display:grid;gap:16px;max-width:560px}
+label{display:grid;gap:5px;font-weight:600;font-size:.95rem}
+input,select,textarea{font:inherit;padding:11px 12px;border:1px solid #9DB5A5;border-radius:2px;background:#fff;color:var(--ink)}
+textarea{min-height:120px;resize:vertical}
+button.send{font:inherit;font-weight:600;background:var(--bottle);color:var(--gold);border:0;padding:15px 32px;border-radius:2px;letter-spacing:.1em;text-transform:uppercase;font-size:.85rem;cursor:pointer;justify-self:start}
+button.send:hover{background:var(--olive);color:#fff}
+.mail{margin-top:22px}
+footer{background:var(--bottle);color:#A9C4B4;border-top:1px solid rgba(96,163,124,.28);padding:30px 0 calc(30px + env(safe-area-inset-bottom,0px));font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+@media(max-width:820px){
+section{padding:72px 0}.hero{padding:72px 0 80px}.logo svg{height:30px}
+.hero .wrap,.two{grid-template-columns:1fr;gap:32px}
+.hero svg{max-width:220px;order:-1;justify-self:start}
+.steps{grid-template-columns:1fr 1fr}
+nav a{display:none}
+section{padding:56px 0}}
+@media(max-width:520px){.steps{grid-template-columns:1fr}.mills,.buyers{padding:26px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<a class="logo" href="#top" aria-label="Praffo"><svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="122" height="34" viewBox="76 178 710 206" role="img" aria-label="Praffo" focusable="false">
+<defs>
+<g>
+<g id="glyph-0-0">
+<path d="M 12.0625 -15.921875 C 15.757812 -16.078125 18.851562 -16.554688 21.34375 -17.359375 C 23.832031 -18.171875 25.757812 -20.019531 27.125 -22.90625 C 28.5 -25.800781 29.1875 -30.46875 29.1875 -36.90625 L 29.1875 -129.28125 C 29.1875 -133.625 29.304688 -137.804688 29.546875 -141.828125 C 29.785156 -145.847656 29.988281 -148.90625 30.15625 -151 C 27.582031 -150.832031 24.363281 -150.707031 20.5 -150.625 C 16.644531 -150.550781 13.832031 -150.429688 12.0625 -150.265625 L 12.0625 -168.84375 C 23.476562 -169 34.894531 -169.078125 46.3125 -169.078125 C 57.726562 -169.078125 69.144531 -169.160156 80.5625 -169.328125 C 94.707031 -169.484375 107.046875 -167.628906 117.578125 -163.765625 C 128.117188 -159.910156 136.242188 -153.960938 141.953125 -145.921875 C 147.660156 -137.890625 150.351562 -127.441406 150.03125 -114.578125 C 149.863281 -108.140625 148.332031 -101.820312 145.4375 -95.625 C 142.550781 -89.4375 138.289062 -83.8125 132.65625 -78.75 C 127.03125 -73.6875 119.957031 -69.546875 111.4375 -66.328125 C 102.914062 -63.109375 92.945312 -61.34375 81.53125 -61.03125 C 77.988281 -60.863281 74.890625 -60.78125 72.234375 -60.78125 C 69.585938 -60.78125 66.894531 -60.863281 64.15625 -61.03125 L 64.15625 -39.796875 C 64.15625 -35.296875 64.070312 -31.035156 63.90625 -27.015625 C 63.75 -22.992188 63.507812 -19.9375 63.1875 -17.84375 C 64.957031 -18.007812 67.207031 -18.128906 69.9375 -18.203125 C 72.675781 -18.285156 75.375 -18.367188 78.03125 -18.453125 C 80.6875 -18.535156 82.578125 -18.578125 83.703125 -18.578125 L 83.703125 0 L 12.0625 0 Z M 64.15625 -79.109375 C 65.925781 -78.953125 67.695312 -78.789062 69.46875 -78.625 C 71.238281 -78.46875 73.085938 -78.390625 75.015625 -78.390625 C 83.859375 -78.390625 91.050781 -79.875 96.59375 -82.84375 C 102.144531 -85.820312 106.207031 -90.164062 108.78125 -95.875 C 111.351562 -101.582031 112.640625 -108.539062 112.640625 -116.75 C 112.640625 -124.78125 111.550781 -131.207031 109.375 -136.03125 C 107.207031 -140.863281 104.4375 -144.441406 101.0625 -146.765625 C 97.6875 -149.097656 94.148438 -150.625 90.453125 -151.34375 C 86.753906 -152.070312 83.378906 -152.4375 80.328125 -152.4375 C 76.941406 -152.4375 74.039062 -152.035156 71.625 -151.234375 C 69.21875 -150.429688 67.367188 -148.660156 66.078125 -145.921875 C 64.796875 -143.191406 64.15625 -139.015625 64.15625 -133.390625 Z M 64.15625 -79.109375 "/>
+</g>
+<g id="glyph-0-1">
+<path d="M 9.890625 -15.671875 C 14.390625 -15.671875 17.601562 -16.554688 19.53125 -18.328125 C 21.46875 -20.097656 22.71875 -22.628906 23.28125 -25.921875 C 23.84375 -29.222656 24.125 -32.960938 24.125 -37.140625 L 24.125 -77.671875 C 24.125 -80.566406 24.203125 -83.820312 24.359375 -87.4375 C 24.523438 -91.050781 24.765625 -94.628906 25.078125 -98.171875 C 22.503906 -98.003906 19.488281 -97.878906 16.03125 -97.796875 C 12.582031 -97.722656 9.972656 -97.609375 8.203125 -97.453125 L 8.203125 -115.78125 L 17.84375 -115.78125 C 24.113281 -115.78125 29.863281 -116.582031 35.09375 -118.1875 C 40.320312 -119.789062 43.738281 -121.398438 45.34375 -123.015625 L 57.171875 -123.015625 C 57.484375 -121.398438 57.71875 -118.378906 57.875 -113.953125 C 58.039062 -109.535156 58.125 -105.640625 58.125 -102.265625 C 62.46875 -107.578125 66.566406 -111.835938 70.421875 -115.046875 C 74.285156 -118.265625 78.109375 -120.632812 81.890625 -122.15625 C 85.671875 -123.6875 89.488281 -124.453125 93.34375 -124.453125 C 98.96875 -124.453125 103.867188 -122.882812 108.046875 -119.75 C 112.234375 -116.613281 114.328125 -111.507812 114.328125 -104.4375 C 114.328125 -102.03125 113.765625 -99.5 112.640625 -96.84375 C 111.515625 -94.1875 109.742188 -91.972656 107.328125 -90.203125 C 104.921875 -88.441406 101.628906 -87.5625 97.453125 -87.5625 C 94.234375 -87.5625 90.929688 -88.523438 87.546875 -90.453125 C 84.171875 -92.378906 82.242188 -96.078125 81.765625 -101.546875 C 78.546875 -101.546875 75.328125 -100.21875 72.109375 -97.5625 C 68.898438 -94.914062 66.046875 -91.78125 63.546875 -88.15625 C 61.054688 -84.539062 59.332031 -81.207031 58.375 -78.15625 L 58.375 -38.828125 C 58.375 -36.578125 58.289062 -33.398438 58.125 -29.296875 C 57.96875 -25.203125 57.726562 -21.304688 57.40625 -17.609375 C 59.976562 -17.929688 62.832031 -18.128906 65.96875 -18.203125 C 69.101562 -18.285156 71.472656 -18.328125 73.078125 -18.328125 L 73.078125 0 L 9.890625 0 Z M 9.890625 -15.671875 "/>
+</g>
+<g id="glyph-0-2">
+<path d="M 76.9375 0 C 76.625 -2.25 76.425781 -4.132812 76.34375 -5.65625 C 76.257812 -7.1875 76.140625 -9 75.984375 -11.09375 C 70.515625 -5.625 64.722656 -1.765625 58.609375 0.484375 C 52.503906 2.734375 46.316406 3.859375 40.046875 3.859375 C 29.753906 3.859375 21.710938 0.804688 15.921875 -5.296875 C 10.128906 -11.410156 7.234375 -19.050781 7.234375 -28.21875 C 7.234375 -35.9375 9.203125 -42.53125 13.140625 -48 C 17.085938 -53.46875 22.316406 -57.929688 28.828125 -61.390625 C 35.335938 -64.847656 42.570312 -67.5 50.53125 -69.34375 C 58.488281 -71.195312 66.488281 -72.285156 74.53125 -72.609375 L 74.53125 -85.140625 C 74.53125 -89.328125 74.003906 -93.109375 72.953125 -96.484375 C 71.910156 -99.859375 70.144531 -102.507812 67.65625 -104.4375 C 65.164062 -106.363281 61.671875 -107.25 57.171875 -107.09375 C 54.109375 -106.9375 51.128906 -106.289062 48.234375 -105.15625 C 45.347656 -104.03125 42.859375 -102.425781 40.765625 -100.34375 C 42.046875 -98.894531 42.847656 -97.328125 43.171875 -95.640625 C 43.492188 -93.953125 43.65625 -92.460938 43.65625 -91.171875 C 43.65625 -87.953125 42.367188 -84.613281 39.796875 -81.15625 C 37.222656 -77.707031 33.125 -76.0625 27.5 -76.21875 C 22.675781 -76.382812 18.976562 -78.070312 16.40625 -81.28125 C 13.832031 -84.5 12.546875 -88.28125 12.546875 -92.625 C 12.546875 -99.050781 14.835938 -104.632812 19.421875 -109.375 C 24.003906 -114.125 30.15625 -117.820312 37.875 -120.46875 C 45.59375 -123.125 54.113281 -124.453125 63.4375 -124.453125 C 77.582031 -124.453125 88.554688 -120.796875 96.359375 -113.484375 C 104.160156 -106.171875 108.0625 -94.472656 108.0625 -78.390625 C 108.0625 -72.921875 108.0625 -68.253906 108.0625 -64.390625 C 108.0625 -60.535156 108.019531 -56.675781 107.9375 -52.8125 C 107.851562 -48.957031 107.8125 -44.296875 107.8125 -38.828125 C 107.8125 -36.578125 107.726562 -33.398438 107.5625 -29.296875 C 107.40625 -25.203125 107.171875 -21.304688 106.859375 -17.609375 C 109.585938 -17.929688 112.476562 -18.128906 115.53125 -18.203125 C 118.59375 -18.285156 120.925781 -18.328125 122.53125 -18.328125 L 122.53125 0 Z M 74.296875 -55.484375 C 69.785156 -54.992188 65.519531 -54.1875 61.5 -53.0625 C 57.488281 -51.9375 53.992188 -50.410156 51.015625 -48.484375 C 48.035156 -46.554688 45.703125 -44.222656 44.015625 -41.484375 C 42.328125 -38.753906 41.484375 -35.703125 41.484375 -32.328125 C 41.648438 -27.816406 43.097656 -24.597656 45.828125 -22.671875 C 48.554688 -20.742188 51.691406 -19.78125 55.234375 -19.78125 C 58.929688 -19.78125 62.390625 -20.582031 65.609375 -22.1875 C 68.828125 -23.800781 71.722656 -25.894531 74.296875 -28.46875 C 74.296875 -30.070312 74.296875 -31.632812 74.296875 -33.15625 C 74.296875 -34.6875 74.296875 -36.257812 74.296875 -37.875 C 74.296875 -40.757812 74.296875 -43.691406 74.296875 -46.671875 C 74.296875 -49.648438 74.296875 -52.585938 74.296875 -55.484375 Z M 74.296875 -55.484375 "/>
+</g>
+<g id="glyph-0-3">
+<path d="M 24.84375 -127.59375 C 24.84375 -147.050781 29.101562 -161 37.625 -169.4375 C 46.144531 -177.882812 57.644531 -182.109375 72.125 -182.109375 C 79.675781 -182.109375 85.703125 -181.019531 90.203125 -178.84375 C 94.710938 -176.675781 97.929688 -173.984375 99.859375 -170.765625 C 101.785156 -167.554688 102.75 -164.257812 102.75 -160.875 C 102.75 -156.695312 101.460938 -153 98.890625 -149.78125 C 96.316406 -146.570312 92.617188 -144.882812 87.796875 -144.71875 C 83.128906 -144.5625 79.507812 -145.804688 76.9375 -148.453125 C 74.363281 -151.109375 73.078125 -154.445312 73.078125 -158.46875 C 73.078125 -159.269531 73.117188 -160.070312 73.203125 -160.875 C 73.285156 -161.6875 73.40625 -162.492188 73.5625 -163.296875 C 72.757812 -164.097656 71.832031 -164.617188 70.78125 -164.859375 C 69.738281 -165.097656 68.816406 -165.21875 68.015625 -165.21875 C 65.441406 -165.21875 63.429688 -164.453125 61.984375 -162.921875 C 60.535156 -161.398438 59.570312 -159.515625 59.09375 -157.265625 C 58.613281 -155.015625 58.375 -152.679688 58.375 -150.265625 L 58.375 -120.59375 L 85.390625 -120.59375 L 85.390625 -102.03125 L 58.609375 -101.3125 L 58.859375 -39.3125 C 58.859375 -37.0625 58.773438 -33.804688 58.609375 -29.546875 C 58.453125 -25.285156 58.210938 -21.304688 57.890625 -17.609375 C 60.617188 -17.929688 63.710938 -18.128906 67.171875 -18.203125 C 70.628906 -18.285156 73.160156 -18.328125 74.765625 -18.328125 L 74.765625 0 L 10.375 0 L 10.375 -15.671875 C 14.875 -15.671875 18.128906 -16.554688 20.140625 -18.328125 C 22.148438 -20.097656 23.4375 -22.628906 24 -25.921875 C 24.5625 -29.222656 24.84375 -32.960938 24.84375 -37.140625 L 24.84375 -100.828125 L 7.234375 -100.578125 L 7.234375 -120.59375 L 24.84375 -120.59375 Z M 24.84375 -127.59375 "/>
+</g>
+<g id="glyph-0-4">
+<path d="M 68.984375 3.859375 C 57.410156 3.859375 46.957031 1.367188 37.625 -3.609375 C 28.300781 -8.597656 20.945312 -15.710938 15.5625 -24.953125 C 10.175781 -34.203125 7.484375 -45.097656 7.484375 -57.640625 C 7.484375 -70.992188 10.253906 -82.691406 15.796875 -92.734375 C 21.347656 -102.785156 28.742188 -110.582031 37.984375 -116.125 C 47.234375 -121.675781 57.328125 -124.453125 68.265625 -124.453125 C 79.835938 -124.453125 90.207031 -121.957031 99.375 -116.96875 C 108.539062 -111.988281 115.773438 -104.875 121.078125 -95.625 C 126.390625 -86.382812 129.046875 -75.332031 129.046875 -62.46875 C 129.046875 -48.957031 126.472656 -37.21875 121.328125 -27.25 C 116.179688 -17.28125 109.101562 -9.601562 100.09375 -4.21875 C 91.09375 1.164062 80.722656 3.859375 68.984375 3.859375 Z M 69.953125 -13.265625 C 76.378906 -13.421875 81.238281 -15.671875 84.53125 -20.015625 C 87.832031 -24.359375 90.125 -29.828125 91.40625 -36.421875 C 92.695312 -43.015625 93.34375 -49.6875 93.34375 -56.4375 C 93.34375 -62.382812 92.898438 -68.414062 92.015625 -74.53125 C 91.128906 -80.644531 89.722656 -86.191406 87.796875 -91.171875 C 85.867188 -96.160156 83.253906 -100.179688 79.953125 -103.234375 C 76.660156 -106.285156 72.601562 -107.734375 67.78125 -107.578125 C 61.507812 -107.410156 56.5625 -105.15625 52.9375 -100.8125 C 49.320312 -96.476562 46.75 -91.050781 45.21875 -84.53125 C 43.695312 -78.019531 42.9375 -71.226562 42.9375 -64.15625 C 42.9375 -55.957031 43.816406 -47.914062 45.578125 -40.03125 C 47.347656 -32.15625 50.203125 -25.6875 54.140625 -20.625 C 58.085938 -15.5625 63.359375 -13.109375 69.953125 -13.265625 Z M 69.953125 -13.265625 "/>
+</g>
+</g>
+</defs>
+<g fill="#60A37C" fill-opacity="1">
+<use xlink:href="#glyph-0-0" x="74.386499" y="370.678665"/>
+<use xlink:href="#glyph-0-1" x="228.515305" y="370.678665"/>
+</g>
+<g fill="#60A37C" fill-opacity="1">
+<use xlink:href="#glyph-0-2" x="342.604389" y="370.678665"/>
+<use xlink:href="#glyph-0-3" x="468.994834" y="370.678665"/>
+</g>
+<g fill="#60A37C" fill-opacity="1">
+<use xlink:href="#glyph-0-3" x="560.410823" y="370.678665"/>
+</g>
+<g fill="#60A37C" fill-opacity="1">
+<use xlink:href="#glyph-0-4" x="648.208766" y="370.678665"/>
+</g>
+<path fill-rule="nonzero" fill="#0E1B14" fill-opacity="1" d="M 146.015625 223.875 L 113.273438 243.566406 L 138.511719 243.566406 "/>
+<path fill-rule="nonzero" fill="#0E1B14" fill-opacity="1" d="M 146.015625 223.875 L 113.273438 243.566406 L 138.511719 243.566406 "/>
+<path fill-rule="nonzero" fill="#60A37C" fill-opacity="1" d="M 157.558594 231.394531 C 157.558594 233.816406 155.59375 235.785156 153.167969 235.785156 C 150.742188 235.785156 148.777344 233.816406 148.777344 231.394531 C 148.777344 228.96875 150.742188 227.003906 153.167969 227.003906 C 155.59375 227.003906 157.558594 228.96875 157.558594 231.394531 "/>
+</svg></a>
+<nav aria-label="Main">
+<a href="#how" data-i18n="n_how">How it works</a><a href="#mills" data-i18n="n_mills">For mills</a><a href="#buyers" data-i18n="n_buyers">For buyers</a><a href="#contact" data-i18n="n_contact">Contact</a>
+<button class="lang" id="lang" type="button" aria-label="Change language">IT</button>
+</nav></div></header>
+
+<main id="top">
+<div class="hero"><div class="wrap">
+<div>
+<h1 data-i18n="h_t">From an Abruzzo olive mill to tables in Berlin and London.</h1>
+<p data-i18n="h_s">Praffo introduces DOP olive oil producers from Chieti and Pescara to restaurants and businesses abroad, and helps the mills present themselves to foreign markets.</p>
+<div class="btns"><a class="btn main" href="#mills" data-i18n="b_mill">I run an olive mill</a><a class="btn alt" href="#buyers" data-i18n="b_buyer">I am a buyer</a></div>
+</div>
+<svg viewBox="0 0 200 200" role="img" aria-label="Praffo">
+<circle cx="100" cy="100" r="100" fill="#60A37C"/>
+<g transform="translate(100 100) scale(.6) translate(-154 -281)"><use href="#glyph-0-0" xlink:href="#glyph-0-0" x="74.386499" y="370.678665" fill="#fff"/><path d="M146.015625 223.875L113.273438 243.566406L138.511719 243.566406Z" fill="#60A37C"/><circle cx="153.168" cy="231.394" r="4.39" fill="#fff"/></g>
+</svg>
+</div></div>
+
+<section><div class="wrap two">
+<div><h2 data-i18n="p_t">Great oil, hard to reach.</h2></div>
+<div><p data-i18n="p_1">Many small Abruzzo mills make exceptional extra virgin oil but have no easy way to reach buyers abroad.</p><p data-i18n="p_2">At the same time, restaurants and importers in Germany and the UK struggle to find producers they can trust. Praffo connects the two sides.</p></div>
+</div></section>
+
+<section class="pale" id="how"><div class="wrap">
+<h2 data-i18n="how_t">How it works</h2>
+<ol class="steps">
+<li><h3 data-i18n="s1_t">We select mills</h3><p data-i18n="s1_p">We visit and choose DOP producers in the Chieti and Pescara areas.</p></li>
+<li><h3 data-i18n="s2_t">We find the match</h3><p data-i18n="s2_p">We introduce each mill to a buyer whose needs fit its oil.</p></li>
+<li><h3 data-i18n="s3_t">We build the brand</h3><p data-i18n="s3_p">We prepare labels, story and materials that work in foreign markets.</p></li>
+<li><h3 data-i18n="s4_t">Shipping to you</h3><p data-i18n="s4_p">The oil goes straight from the mill to the buyer. Shipping is paid by the buyer.</p></li>
+</ol></div></section>
+
+<section><div class="wrap two">
+<div class="mills" id="mills"><h2 data-i18n="m_t">For mills</h2>
+<ul class="tick"><li data-i18n="m_1">Reach buyers in Germany and the UK without building an export team.</li><li data-i18n="m_2">Keep your oil and your name: Praffo never buys or stores your product.</li><li data-i18n="m_3">Get brand identity support for foreign markets.</li></ul></div>
+<div class="buyers" id="buyers"><h2 data-i18n="y_t">For buyers</h2>
+<ul class="tick"><li data-i18n="y_1">Source extra virgin oil directly from verified Abruzzo producers.</li><li data-i18n="y_2">One contact for introductions, instead of searching mill by mill.</li><li data-i18n="y_3">Clear origin and producer story for your menu or shelf.</li></ul></div>
+</div></section>
+
+<section class="pale"><div class="wrap two">
+<div><h2 data-i18n="w_t">Why Abruzzo and DOP</h2></div>
+<div><p data-i18n="w_1">The hills of Chieti and Pescara have grown olives for centuries, and DOP status ties the oil to its territory and to rules of quality.</p><p data-i18n="w_2">For a buyer, that means a defined origin. For a mill, it is a story worth telling abroad.</p></div>
+</div></section>
+
+<section id="contact"><div class="wrap">
+<h2 data-i18n="c_t">Talk to us</h2>
+<p data-i18n="c_p">Tell us who you are and what you are looking for. We reply by email.</p>
+<!-- IMPORTANTE: sostituisci YOUR_FORM_ID con l'ID del tuo modulo creato gratis su formspree.io -->
+<form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+<label><span data-i18n="f_name">Name</span><input name="name" required autocomplete="name"></label>
+<label><span data-i18n="f_company">Company</span><input name="company" autocomplete="organization"></label>
+<label><span data-i18n="f_role">I am a</span><select name="role"><option data-i18n="o_mill" value="mill">Olive mill</option><option data-i18n="o_buyer" value="buyer">Buyer</option></select></label>
+<label><span data-i18n="f_country">Country</span><input name="country" autocomplete="country-name"></label>
+<label>Email<input type="email" name="email" required autocomplete="email"></label>
+<label><span data-i18n="f_msg">Message</span><textarea name="message" required></textarea></label>
+<button class="send" type="submit" data-i18n="f_send">Send message</button>
+</form>
+<p class="mail"><span data-i18n="c_mail">Or write to</span> <a href="mailto:praffo@praffo.com">praffo@praffo.com</a></p>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Praffo · <span data-i18n="vat">VAT no.: to be added</span></span><a href="#" data-i18n="priv">Privacy policy</a></div></footer>
+
+<script>
+const T={
+en:{n_how:"How it works",n_mills:"For mills",n_buyers:"For buyers",n_contact:"Contact",
+h_t:"From an Abruzzo olive mill to tables in Berlin and London.",
+h_s:"Praffo introduces DOP olive oil producers from Chieti and Pescara to restaurants and businesses abroad, and helps the mills present themselves to foreign markets.",
+b_mill:"I run an olive mill",b_buyer:"I am a buyer",
+p_t:"Great oil, hard to reach.",
+p_1:"Many small Abruzzo mills make exceptional extra virgin oil but have no easy way to reach buyers abroad.",
+p_2:"At the same time, restaurants and importers in Germany and the UK struggle to find producers they can trust. Praffo connects the two sides.",
+how_t:"How it works",
+s1_t:"We select mills",s1_p:"We visit and choose DOP producers in the Chieti and Pescara areas.",
+s2_t:"We find the match",s2_p:"We introduce each mill to a buyer whose needs fit its oil.",
+s3_t:"We build the brand",s3_p:"We prepare labels, story and materials that work in foreign markets.",
+s4_t:"Shipping to you",s4_p:"The oil goes straight from the mill to the buyer. Shipping is paid by the buyer.",
+m_t:"For mills",m_1:"Reach buyers in Germany and the UK without building an export team.",m_2:"Keep your oil and your name: Praffo never buys or stores your product.",m_3:"Get brand identity support for foreign markets.",
+y_t:"For buyers",y_1:"Source extra virgin oil directly from verified Abruzzo producers.",y_2:"One contact for introductions, instead of searching mill by mill.",y_3:"Clear origin and producer story for your menu or shelf.",
+w_t:"Why Abruzzo and DOP",
+w_1:"The hills of Chieti and Pescara have grown olives for centuries, and DOP status ties the oil to its territory and to rules of quality.",
+w_2:"For a buyer, that means a defined origin. For a mill, it is a story worth telling abroad.",
+c_t:"Talk to us",c_p:"Tell us who you are and what you are looking for. We reply by email.",
+f_name:"Name",f_company:"Company",f_role:"I am a",o_mill:"Olive mill",o_buyer:"Buyer",f_country:"Country",f_msg:"Message",f_send:"Send message",c_mail:"Or write to",
+vat:"VAT no.: to be added",priv:"Privacy policy"},
+it:{n_how:"Come funziona",n_mills:"Per i frantoi",n_buyers:"Per i compratori",n_contact:"Contatti",
+h_t:"Dal frantoio abruzzese alle tavole di Berlino e Londra.",
+h_s:"Praffo presenta i produttori di olio DOP di Chieti e Pescara a ristoranti e aziende all'estero, e aiuta i frantoi a presentarsi sui mercati esteri.",
+b_mill:"Ho un frantoio",b_buyer:"Sono un compratore",
+p_t:"Ottimo olio, difficile da raggiungere.",
+p_1:"Molti piccoli frantoi abruzzesi producono olio extravergine eccellente ma non hanno un modo semplice per arrivare ai compratori esteri.",
+p_2:"Allo stesso tempo, ristoranti e importatori in Germania e Regno Unito faticano a trovare produttori di cui fidarsi. Praffo mette in contatto le due parti.",
+how_t:"Come funziona",
+s1_t:"Selezioniamo i frantoi",s1_p:"Scegliamo produttori DOP nelle zone di Chieti e Pescara.",
+s2_t:"Troviamo l'abbinamento",s2_p:"Presentiamo ogni frantoio a un compratore adatto al suo olio.",
+s3_t:"Costruiamo il brand",s3_p:"Prepariamo etichette, storia e materiali che funzionano sui mercati esteri.",
+s4_t:"Spedizione a voi",s4_p:"L'olio va dal frantoio direttamente al compratore. La spedizione è a carico dell'acquirente.",
+m_t:"Per i frantoi",m_1:"Raggiungete compratori in Germania e Regno Unito senza creare un ufficio export.",m_2:"Mantenete olio e nome: Praffo non acquista né stocca il vostro prodotto.",m_3:"Ricevete supporto di brand identity per i mercati esteri.",
+y_t:"Per i compratori",y_1:"Acquistate olio extravergine direttamente da produttori abruzzesi verificati.",y_2:"Un solo contatto per le presentazioni, invece di cercare frantoio per frantoio.",y_3:"Origine chiara e storia del produttore per il vostro menu o scaffale.",
+w_t:"Perché Abruzzo e DOP",
+w_1:"Le colline di Chieti e Pescara coltivano ulivi da secoli, e la DOP lega l'olio al suo territorio e a regole di qualità.",
+w_2:"Per un compratore significa origine definita. Per un frantoio è una storia da raccontare all'estero.",
+c_t:"Parliamo",c_p:"Raccontaci chi sei e cosa cerchi. Rispondiamo via email.",
+f_name:"Nome",f_company:"Azienda",f_role:"Sono un",o_mill:"Frantoio",o_buyer:"Compratore",f_country:"Paese",f_msg:"Messaggio",f_send:"Invia messaggio",c_mail:"Oppure scrivi a",
+vat:"P.IVA: da inserire",priv:"Informativa privacy"}};
+function setLang(l){
+ document.documentElement.lang=l;
+ document.querySelectorAll("[data-i18n]").forEach(e=>{e.textContent=T[l][e.dataset.i18n]});
+ document.getElementById("lang").textContent=l==="en"?"IT":"EN";
+ try{localStorage.setItem("lang",l)}catch(e){}
+}
+let cur="en";
+try{cur=localStorage.getItem("lang")||((navigator.language||"").slice(0,2)==="it"?"it":"en")}catch(e){}
+document.getElementById("lang").addEventListener("click",()=>{cur=cur==="en"?"it":"en";setLang(cur)});
+setLang(cur);
+</script>
+</body>
+</html>
